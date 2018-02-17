@@ -57,6 +57,7 @@ class Owner
     end
     @pets each {|type, pet| pet.clear}
   end
+  end
 
   @@all = []
 

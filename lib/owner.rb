@@ -52,10 +52,7 @@ class Owner
   end
 
   def sell_pets
-    @pets.map do |key, val|
-      if key != nil
-        @pets[key] = nil
-      end
+    @pets.delete_if {|key, val| if key != nil}
     end
   end
 

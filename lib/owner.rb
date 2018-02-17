@@ -71,6 +71,7 @@ class Owner
   def self.all
     @@all << self
     @@all
+    binding.pry 
   end
 
 

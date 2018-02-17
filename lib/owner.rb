@@ -70,6 +70,7 @@ class Owner
 
   def self.all
     @@all << self
+    @@all
   end
 
 

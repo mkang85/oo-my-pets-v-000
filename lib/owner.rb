@@ -52,7 +52,7 @@ class Owner
   end
 
   def sell_pets
-    @pets.each do |key, val|
+    @pets.map do |key, val|
       if key != nil
         @pets[key] = nil
       end

@@ -2,10 +2,16 @@ require 'pry'
 class Owner
   attr_accessor :name, :pets
   attr_reader :species
+  @@all = []
 
   def initialize(species)
     @species = species
     @pets = {:fishes => [], :dogs => [], :cats => []}
+    @@all << self
+  end
+
+  def self.all
+    @@all << self
   end
 
   def say_species
@@ -65,14 +71,5 @@ class Owner
 
     "I have #{number_of_fish} fish, #{number_of_dogs} dog(s), and #{number_of_cats} cat(s)."
   end
-
-  @@all = []
-
-  def self.all
-    @@all << self
-    binding.pry
-  end
-
-
 
 end

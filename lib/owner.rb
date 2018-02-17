@@ -53,7 +53,6 @@ class Owner
 
   def sell_pets
     @pets.delete_if{|key, val| if key != nil}
-      binding.pry
   end
 
   @@all = []

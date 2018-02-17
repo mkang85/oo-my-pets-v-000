@@ -52,7 +52,7 @@ class Owner
   end
 
   def sell_pets
-    @pets.delete_if{|key, val| if key != nil}
+    #@pets.delete_if{|key, val| if key != nil}
   end
 
   @@all = []

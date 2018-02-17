@@ -55,8 +55,6 @@ class Owner
     @pets.each do |type, pet|
       pet.each {|x| x.mood = "nervous"}
     end
-    @pets.each {|type, pet| pet.clear}
-    end
   end
 
   @@all = []
